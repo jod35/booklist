@@ -1,0 +1,51 @@
+*{
+    font-family: sans-serif;
+}
+.text-center{
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    padding: 15px;
+}
+
+.form{
+    width: 50%;
+    margin: auto;
+    border: 1px solid darkslategray;
+    padding: 20px;
+    text-align: center;
+}
+.form-group{
+    padding: 15px;
+}
+
+.form-control{
+    width: 90%;
+    padding: 10px;
+}
+.mybtn{
+    padding: 20px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+}
+
+.book-container{
+    padding: 20px;
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+}
+
+thead{
+    background-color:darksalmon;
+    color: white;
+}
+
+th{
+    padding: 20px;
+}
