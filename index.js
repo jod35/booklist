@@ -1,15 +1,26 @@
 const my_form=document.getElementById('book_form');
-const book_container=document.getElementById('book_container');
+let book_container=document.getElementById('book_container');
+
+
 
 window.onload=function(){
     const books=JSON.parse(localStorage.getItem('books'));
     
-    for(var i of books){
-        console.log(i);
-        
+    for(var i=0; i<books.length; i++){
+        let name = books[i].name;
+        let author=books[i].author;
+        let date_created=books[i].written;
+        let category=books[i].category;
+
+        book_container.innerHTML += `
+        <div class='book'>
+            <h3>${name} by ${author} <span>${date_created}</span></h3>
+            <small>${category}</small>
+            <a href="#" id="del-btn" onclick="delete_book()" class='del-btn'>Delete</a>
+        </div>
+        <br>
+        `
     }
-    
-    
 }
 //event listener
 my_form.addEventListener('submit',addBookToList);
@@ -40,6 +51,8 @@ function addBookToList(e){
         books.push(book);
 
         localStorage.setItem('books',JSON.stringify(books));
+
+        
     }
 
     else{
@@ -58,7 +71,12 @@ function addBookToList(e){
 }
 
 
+function delete_book(book){
+    let book_to_delete=JSON.parse(localStorage.getItem('books'));
+    console.log("hello");
+    
 
+}
 
 
 

@@ -7,11 +7,13 @@
     color: white;
     padding: 15px;
 }
+a{
+    text-decoration: none;
+}
 
 .form{
-    width: 50%;
+    width: 80%;
     margin: auto;
-    border: 1px solid darkslategray;
     padding: 20px;
     text-align: center;
 }
@@ -32,11 +34,19 @@
     border: none;
     text-align: center;
 }
-
+.del-btn{
+    padding: 20px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+}
 .book-container{
     padding: 20px;
     width: 80%;
-    border: 1px solid black;
+   
     margin: auto;
     margin-top: 100px;
 }
@@ -48,4 +58,12 @@ thead{
 
 th{
     padding: 20px;
+}
+
+.book{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darksalmon;
+    color: white;
 }
