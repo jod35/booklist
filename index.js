@@ -3,9 +3,6 @@ const book_container=document.getElementById('book_container');
 
 window.onload=function(){
     const books=JSON.parse(localStorage.getItem('books'));
-
-    
-    
     
     for(var i of books){
         console.log(i);
